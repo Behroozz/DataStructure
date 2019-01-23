@@ -1,3 +1,7 @@
+//      40
+//   25    78 
+// 10  32 
+
 function Node(data) {
   this.data = data
   this.left = null
