@@ -1,3 +1,7 @@
+// Access	Search	Insertion	Deletion Space	
+// Stack	Θ(n)	Θ(n)	Θ(1)	Θ(1)  O(n)
+// Queue	Θ(n)	Θ(n)	Θ(1)	Θ(1)  O(n)
+
 function Stack() {
   this.stack = []
 }
@@ -19,6 +23,10 @@ Stack.prototype.length = function() {
 }
 
 Stack.prototype.print =  function() {
+  console.log(this.stack.join(' '))
+}
+
+Stack.prototype.print = function() {
   console.log(this.stack.join(' '))
 }
 
