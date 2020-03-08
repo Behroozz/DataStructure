@@ -1,0 +1,23 @@
+{
+  "root": {
+    "data": 4,
+    "left": {
+      "data": 2,
+      "left": null,
+      "right": {
+        "data": 3,
+        "left": null,
+        "right": null
+      }
+    },
+    "right": {
+      "data": 5,
+      "left": null,
+      "right": {
+        "data": 8,
+        "left": null,
+        "right": null
+      }
+    }
+  }
+}

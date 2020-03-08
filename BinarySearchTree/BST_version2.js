@@ -441,6 +441,36 @@ function inorderSuccessor(root, p) {
   return result
 }
 
+let globalList = []
+function kDistanceNode(k, target) {
+  // console.log('k', k)
+  // console.log('target', target)
+
+  if(root === null && target === null) {
+    return
+  }
+
+  if(k > 0) {
+    globalList.push(target)
+  }
+  
+  if(k === 0) {
+    return globalList
+  }
+
+  while(target !==null && k > 0) {
+    if(target.left) {
+      kDistanceNode(k--, target.left)
+    }
+    if(target.right) {
+      kDistanceNode(k--, target.right)
+    }
+    if(target.left === null && target.right === null) {
+      return
+    }
+  }
+}
+
 //  5
 // 1  7
 //   6  8
@@ -503,8 +533,9 @@ bst.insertNode(11)
 //  5
 // 1 7 
 //   6 11
-console.log('bst', JSON.stringify(bst))
+// console.log('bst', JSON.stringify(bst))
 //https://www.geeksforgeeks.org/implementation-binary-search-tree-javascript/
-bst.removeData(8)
-console.log('bst after remove', JSON.stringify(bst))
+// bst.removeData(8)
+// console.log('bst after remove', JSON.stringify(bst))
 
+console.log('kDistanceNode(k, target)', kDistanceNode(2, bst.root))
