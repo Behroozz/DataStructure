@@ -1,3 +1,17 @@
+// Splice
+// [3] = [1,2,3].splice(2,1,4)
+// remove 1 element from index 1 and inject 2
+// [1,2,4]
+// [] = [1,2,3].splice(2,0,4)
+// [1,2,4,3]
+// Splice
+
+// Slice
+// [2] = [1,2,3].slice(1,2)
+// including first index and excluding last index
+
+
+
 function MyArray() {
   this.array = []
 }

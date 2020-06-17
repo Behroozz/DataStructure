@@ -1,10 +1,12 @@
+// https://codeburst.io/linked-lists-in-javascript-es6-code-part-1-6dd349c3dcc3
 class Node {
   constructor(data, next = null) {
     this.data = data
     this.next = null
   }
 }
-
+//Access	Search	Insertion	Deletion
+// O(n)	  O(n)	  O(1)	    O(1)
 // head --> [] -> [] -> [] <-- tail
 class LinkedList {
   constructor() {
@@ -114,8 +116,6 @@ class LinkedList {
     previous.next = previous.next.next
   }
 }
-
-
 
 module.exports = {
   LinkedList
